@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    background-image: radial-gradient(#efd9d1,#f4eeed);
+}
+
+@media screen and (orientation: landscape) {
+    .gridArea {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+		"header header"
+        "backlink backlink"
+		"content image"
+		"description description"
+		"footer footer";
+        padding: 1px;
+        
+    }
+}
+
+@media screen and (orientation: potrait) {
+		.gridArea {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto;
+			grid-template-areas:
+			"header"
+            "backlink"
+			"image"
+			"content"
+			"description"
+			"footer";
+			gap : 5px;
+			
+		}
+}	
+
+.head{
+	grid-area: header;
+	font-weight: bold;
+	font-family: Consolas;
+	background-color: black;
+	text-align: center;
+}
+#header{
+	color: blanchedalmond;
+}
+
+.content{
+	grid-area: menu;
+}
+
+.foot{
+	grid-area: footer;
+	font-weight: bold;
+	font-family: Consolas;
+	background-color: black;
+	text-align: center;
+}
+
+.backLink{
+    grid-area: backlink;
+    text-align: center;
+}
+
+#goBack { 
+    border-radius: 50px; 
+	text-decoration: none;
+    background-color: #f8dc81; 
+    font-size: 1em; 
+    color: white; 
+    padding: 5px;
+    text-align: center;
+}
+
+.content
+{
+    grid-area: content;
+	text-align: center;
+	padding-top: 25px;
+	background-color: #d8ac9c;
+	font-family: 'Signika', sans-serif;
+}
+
+.image
+{
+    grid-area: image;
+	padding: 5px;
+	text-align: center;
+	background-color: #999b84;
+
+}
+
+.description
+{
+    grid-area: description;
+	text-align: center;
+	text-decoration-color: azure;
+	background-color: cadetblue;
+	font-family: 'Signika', sans-serif;
+	
+}
+
+#footer{
+	color: blanchedalmond;
+}
+
+a
+{
+	text-decoration: none;
+	font-weight: bold;
+	color: #214151;
+	font-family: 'Signika', sans-serif;
+}

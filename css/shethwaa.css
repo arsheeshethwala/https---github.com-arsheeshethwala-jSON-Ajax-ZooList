@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #ffcb91;
+}
+
+@media screen and (orientation: landscape) {
+    .gridArea {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+		"header header"
+		"menu menu"
+		"content1 content2"
+		"footer footer";
+        gap : 5px;
+        
+    }
+}
+
+@media screen and (orientation: potrait) {
+		.gridArea {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto;
+			grid-template-areas:
+			"header"
+			"menu"
+			"content1"
+			"content2"
+			"footer";
+			gap : 1px;
+			
+		}
+}	
+	
+.head{
+	grid-area: header;
+	font-weight: bold;
+	font-family: Consolas;
+	background-color: black;
+	text-align: center;
+}
+
+.content{
+	grid-area: menu;
+}
+
+#header{
+	color: blanchedalmond;
+}
+.content1{
+	grid-area: content1;
+	background-color: #94ebcd;
+}
+.content2{
+	grid-area: content2;
+	background-color: #6ddccf;
+}
+.foot{
+	grid-area: footer;
+	font-weight: bold;
+	font-family: Consolas;
+	background-color: black;
+	text-align: center;
+}
+
+#menuheader{
+	text-align: center;
+	font-family: 'Signika', sans-serif;
+}
+
+#list1{
+	text-align: center;
+	font-family: 'Signika', sans-serif;
+	text-decoration: none;
+}
+
+#list2{
+	text-align: center;
+	font-family: 'Signika', sans-serif;
+	text-decoration: none;
+}
+
+#mycategory{
+	text-align: center;
+	font-family: 'Signika', sans-serif;
+}
+
+#footer{
+	color: blanchedalmond;
+
+}
+
+a
+{
+	text-decoration: none;
+	font-weight: bold;
+	color: #214151;
+	font-family: 'Signika', sans-serif;
+}
